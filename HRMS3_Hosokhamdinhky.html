@@ -14,7 +14,7 @@ input,select,textarea{border:1px solid #cbd7e5;border-radius:3px;background:#fff
 input:focus,select:focus,textarea:focus{outline:none;border-color:#3273b7;box-shadow:0 0 0 2px #2861aa1c}
 input[type=checkbox],input[type=radio]{min-height:auto;accent-color:#1b5097}
 .topbar{background:#fff;border-bottom:1px solid #dde5ee;box-shadow:0 1px 3px #172d4910}
-.brand{color:#184b93;font-size:21px}
+.brand{color:#000000;font-size:17px;text-transform:none}
 .topicons button{color:#18529d}
 .worktabs{background:#f8fafc;border-bottom-color:#d8e0e9}
 .worktabs span{color:#22589d}
@@ -57,7 +57,7 @@ input[type=checkbox],input[type=radio]{min-height:auto;accent-color:#1b5097}
 .readonly input:not([type=radio]):not([type=checkbox]),.readonly select,.readonly textarea{background:#f6f8fa;color:#6b7886}
 .edit-banner{color:#1b5099;background:#edf4ff;border-left-color:#1b5099}
 .foot{color:#6c7b8b}
-@media(max-width:700px){.toolbar{justify-content:flex-start}.toolbar .right{margin-left:0}.employee{padding:9px}.page{padding:9px}.lab-subtabs{margin:-9px -9px 10px}.brand{font-size:16px}.action{padding:7px 9px}}
+@media(max-width:700px){.toolbar{justify-content:flex-start}.toolbar .right{margin-left:0}.employee{padding:9px}.page{padding:9px}.lab-subtabs{margin:-9px -9px 10px}.brand{font-size:15px}.action{padding:7px 9px}}
 @media print{body{background:#fff}.employee,.page{box-shadow:none;border:0}.section{border-color:#c9d0d8}}
 
 /* Can chinh rieng tab Kham lam sang */
@@ -90,8 +90,7 @@ input[type=checkbox],input[type=radio]{min-height:auto;accent-color:#1b5097}
 </style>
 </head>
 <body>
-<header class="topbar"><div class="brand">TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM</div><div class="topicons"><button title="Trang chủ" onclick="activateTab('history')">⌂</button><button title="Hỗ trợ" onclick="help()">❔</button><button title="Thống kê" onclick="showStats()">▥</button><button title="Thông báo" onclick="toast('Không có thông báo mới')">♧</button><button title="Thiết lập" onclick="toast('Cài đặt bản mô phỏng HTML độc lập')">⚙</button></div></header>
-<div class="worktabs"><span>Thông tin tổng hợp</span><span class="selected">Hồ sơ khám định kỳ &nbsp; ✖</span></div>
+<header class="topbar"><div class="brand">Hồ sơ khám sức khoẻ định kỳ</div><div class="topicons"><button title="Trang chủ" onclick="activateTab('history')">⌂</button><button title="Hỗ trợ" onclick="help()">❔</button><button title="Thống kê" onclick="showStats()">▥</button><button title="Thông báo" onclick="toast('Không có thông báo mới')">♧</button><button title="Thiết lập" onclick="toast('Cài đặt bản mô phỏng HTML độc lập')">⚙</button></div></header>
 <div class="toolbar"><button id="addBtn" class="action" onclick="newRecord()">⊕ Thêm</button><button id="editBtn" class="action" onclick="setEditing(true)">✎ Sửa</button><button id="delBtn" class="action" onclick="deleteRecord()">▤ Xóa</button><button id="cancelBtn" class="action gray" onclick="cancelEdit()" disabled>↶ Hủy</button><button id="saveBtn" class="action gray" onclick="saveRecord()" disabled>▣ Ghi</button></div>
 <div id="editBanner" class="edit-banner hidden">Đang ở chế độ chỉnh sửa. Nhấn <b>Ghi</b> để lưu dữ liệu trên trình duyệt, hoặc <b>Hủy</b> để hoàn tác.</div>
 <div class="employee">
